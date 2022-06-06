@@ -601,6 +601,15 @@ button {
     left: 50%;
   }
 }
+   input[type="number"]{
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none ;
+    margin: 0;
+  }
 </style>
     <title>Authentification</title>
   </head>
@@ -651,7 +660,7 @@ button {
               </div>      
               <div class="input-field">
               <i class="fa-solid fa-phone"id="icon"></i>
-              <input type="text" placeholder="numéro du téléphone" id="numtel" name="numtel"/>
+              <input type="number" placeholder="numéro du téléphone" id="numtel" name="numtel"/>
               </div>      
               <div class="input-field">
               <i class="fa-solid fa-venus-mars" id="icon"></i>
