@@ -601,7 +601,7 @@ button {
     left: 50%;
   }
 }
-   input[type="number"]{
+input[type="number"]{
     outline: none;
     -moz-appearance: textfield;
   }
@@ -696,7 +696,12 @@ button {
   <?php          if(isset($erreur2)){
   echo '<p style="color:#fff;font-size:20px;wieght:400;"><i class="fa-solid fa-user-check" style="color:rgb(0,236,173);"></i> '.$erreur2."</p>";
   
-} ?>
+} ?>  
+    <?php if(isset($erreur1)){
+	 echo '<p style="color:#fff;font-size:1.3em;font-weight:500;text-shadow:0 0 2px black;"><i class="fa-solid fa-triangle-exclamation" style="color:red;"></i> '.$erreur1."</p>";
+}  
+
+	?>  
             <button  id="sign-up-btn">
               S'inscrire
            </button>
@@ -709,11 +714,7 @@ button {
             <p>
               si vous possédez un compte connectez vous directement
             </p>
-           <?php if(isset($erreur1)){
-	 echo '<p style="color:#fff;font-size:1.3em;font-weight:500;text-shadow:0 0 2px black;"><i class="fa-solid fa-triangle-exclamation" style="color:red;"></i> '.$erreur1."</p>";
-}  
-
-	?>    <button  id="sign-in-btn">
+       <button  id="sign-in-btn">
                 Se connecter
              </button>
 
