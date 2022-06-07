@@ -133,7 +133,7 @@ $erreur2="votre message a été envoyé !";
 		transform: scale(1);
 	}
 }
-  .banner.active .logo{
+  .banner.active .lg{
     transform: scale(0);
     transform-origin:left;
   }
@@ -393,7 +393,15 @@ background:linear-gradient(to bottom,rgba(6,55,115,25),rgba(6,70,130,35),#0091FF
 
   }
 
-
+  input[type="number"]{
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none ;
+    margin: 0;
+  }
       
 @media(max-width:991px){
 
@@ -456,16 +464,18 @@ background:linear-gradient(to bottom,rgba(6,55,115,25),rgba(6,70,130,35),#0091FF
 
   <section class="banner"id="top">
     <header>
+      <div data-0-top="opacity:0;left:100px" data-30-top="opacity:1;left:0px" class="lg">
       <a href="#top" class="logo" ><img src="S.PNG" height="80px" style="filter: drop-shadow(0 0 1px black);"><span style="position:relative;top:-30px;text-shadow:0 0 4px #000000;"> Stolen or not</span></a>
+  </div>
       <div class="toggle" onclick="toggle();"></div>
     </header>
     <div class="content" data-0-top="opacity:0;left:100px" data-50-top="opacity:1;left:0px">
       <div class="contentbx">
         <h2 >Objects Detector</h2>
-        <p>Bienvenu sur objects detector ,un detecteur et un registre des objets volés ,
-          le site vous permet de savoir si l'objet proposé pour vous été déja volé ou non , 
-          et il vous permet de déclarer le vol d'un objet qui apppartient a vous pour sensibiliser les autres
-           pour ne pas l'acheter,le site propose aussi d'autres services clique pour savoir plus  </p>
+        <p>Bienvenu sur Objects detector,un detecteur et un registre des objets volés ,
+          le site vous permet de savoir si l'objet proposé pour vous été déja volé ou non, 
+          et il vous permet de faire une déclaration de vol d'un objet, pour sensibiliser les gens
+         pour ne pas l'acheter et vous aider à le récuperer ,le site propose aussi d'autres services clique pour savoir plus sur le boutton en bas </p>
    <a href="#service"><button style="width: 180px;padding: 10px 30px ;">Savoir Plus</button></a>
       </div>
       <div class="imgbx" >
@@ -544,17 +554,16 @@ Object detector propose aussi un suppliment c'est :<br><br>
     <div class="apropos">
       <h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;">A propos</h2>
       <p data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-60px;">Bienvenue chez OBJECT DETECTOR STOLEN OR NOT, notre site est a votre disposition en cas ou vous voulez acheter un objet d'occasion quelque soit
-        Smartphone ,PC, Tablette,vélo... notre site détecte si l'objet qui vous intéresse a été déjà volé ou non et bien-sur aussi vous pouvez
-        faire une déclaration de vole pour faire sensibiliser les gens pour ne pas acheter cet objet et éviter les arnaqeurs </p>
+        Smartphone ,PC,Tablette,vélo,TV... notre site détecte si l'objet qui vous intéresse a été déjà volé ou non et est ce que le vendeur ou le point de vente est fiable ou non,
+        et aussi vous pouvez faire une déclaration de vole pour faire sensibiliser les gens pour ne pas acheter cet objet essayer de le rendre à son propriétaire </p>
     </div>
     </section>
 
 
     <section class="partie5" id="contact">
 <h2 data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-100px;">Nous contacter</h2>
-<p data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-40px;">Bienvenue chez OBJECT DETECTOR STOLEN OR NOT, notre site est a votre disposition en cas ou vous voulez acheter un objet d'occasion quelque soit
-  Smartphone ,PC, Tablette,vélo... notre site détecte si l'objet qui vous intéresse a été déjà volé ou non et bien-sur aussi vous pouvez
-  faire une déclaration de vole pour faire sensibiliser les gens pour ne pas acheter cet objet et éviter les arnaqeurs </p>
+<p data-center-center="opacity:1;right:0;"data-0-bottom="opacity:0;right:-40px;">Bienvenue chez OBJECT DETECTOR STOLEN OR NOT, Vous pouvez nous contacter sur le formulaire en bas,en remplissant tout les informations demandés, en cas ou vous voulez plus d'informations sur quelque chose qui  vous parait ambigu, ou vous disposer
+  d'un problème lors la détection,la déclaration d'un objet, ou sur le coffre virtuel  </p>
 </section>
 
 <section class="partie6">
@@ -574,10 +583,10 @@ Object detector propose aussi un suppliment c'est :<br><br>
     <input type="text" placeholder="nom complet" name="nom">
   </div>
   <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
-    <input type="text" placeholder="mail"name="mail">
+    <input type="email" placeholder="mail"name="mail">
   </div>
   <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
-    <input type="text" placeholder="numéro de téléphone"name="num">
+    <input type="number" placeholder="numéro de téléphone"name="num">
   </div>
   <div class="inputbx"data-center-center="opacity:1;left:0;"data-0-bottom="opacity:0;left:-50px;">
     <textarea type="text" placeholder="ecrivez votre message"name="msg"></textarea>
