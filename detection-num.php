@@ -182,6 +182,15 @@ button{
      opacity:1;
    }
  }
+ input[type="number"]{
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none ;
+    margin: 0;
+  }
 </style>
 <body>
   <header>
@@ -203,7 +212,7 @@ echo '<p><i class="fa-solid fa-triangle-exclamation" style="color:red;"></i> '.$
     <form name="formaadd" method="post" class="formulaire" enctype="multipart/form-data">
 <div class="searchbox">
   <div class="shadow"></div>
-<input type="text" name="number" placeholder="Entrez votre numéro de téléphone"/>
+<input type="number" name="number" placeholder="Entrez votre numéro de téléphone"/>
 <button  type="submit" name="btnnumber"><i class="fa-solid fa-right-to-bracket"id="insert"></i></button>
 </div>
 <br>
